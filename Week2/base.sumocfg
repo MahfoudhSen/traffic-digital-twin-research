@@ -3,8 +3,11 @@
 <configuration>
 
     <input>
+    
         <net-file value="Prj2netwo.net.xml"/>
         <route-files value="base_routes.rou.xml"/>
+        <additional-files value="edges.add.xml"/>
+
     </input>
 
 
