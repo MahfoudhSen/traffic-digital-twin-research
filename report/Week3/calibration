@@ -1,0 +1,29 @@
+### Demand Generation and Calibration
+
+Traffic demand for the study network was generated using SUMO's `randomTrips.py` tool. This tool creates synthetic vehicle trips across the network by assigning vehicle origins, destinations, and departure times. The generated demand was calibrated using traffic data obtained from Florida Traffic Online (FDOT).
+
+The target peak-hour traffic volume was calculated using:
+
+**Peak-Hour Volume = AADT × K-Factor**
+
+For the selected FDOT count station:
+
+* AADT = 50,000 vehicles/day
+* K-Factor = 0.09
+* Target Peak-Hour Volume = 4,500 vehicles/hour
+
+The `--period` parameter in `randomTrips.py` controls the average time between vehicle departures. Several iterations were performed to calibrate the simulated traffic volume to the FDOT target.
+
+Final calibration parameters:
+
+* Period = 0.2 seconds
+* Seed = 42
+* Fringe Factor = 5
+
+The calibrated simulation produced approximately 4,576 vehicles per hour, compared to the FDOT target of 4,500 vehicles per hour.
+
+Percentage difference:
+
+(4576 − 4500) / 4500 × 100 = +1.7%
+
+Since the difference is within the required ±10% calibration threshold, the base scenario was considered successfully calibrated and accepted for subsequent scenario analysis.
