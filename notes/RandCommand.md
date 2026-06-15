@@ -1,10 +1,1 @@
-python randomTrips.py 
--n file.net.xml 
--o file.xml 
--r base.xml 
--b 0 -e 3600
---period 6
---seed 42
---fringe-factors
---validate
-
+python randomTrips.py -n "C:\Users\fau_msenhoury\Documents\SUMO_Project\Week2-PR\Week2\Prj2netwo.net.xml" -o "C:\Users\fau_msenhoury\Documents\SUMO_Project\Week2-PR\Week2\trips.trips.xml" -r "C:\Users\fau_msenhoury\Documents\SUMO_Project\Week2-PR\Week2\base_routes.rou.xml" -b 0 -e 3600 --period 0.3 --seed 42 --fringe-factor 5
