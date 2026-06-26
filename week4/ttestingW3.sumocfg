@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sumoConfiguration>
+    <input>
+        <net-file value="ttestingW3.net.xml"/>
+        <route-files value="custom_flows.rou.xml"/>
+        <additional-files value="edge_dump.add.xml"/>
+    </input>
+    <processing>
+        <ignore-route-errors value="true"/>
+        <time-to-teleport value="-1"/>
+        <max-depart-delay value="-1"/>
+    </processing>
+</sumoConfiguration>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-06-18T14:19:47.500765-05:00 by Eclipse SUMO netconvert 1.27.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\fau_msenhoury\Documents\SUMO_Project\Week2-PR\Week2\Prj2netwo.net.xml"/>
+    </input>
+
+    <output>
+        <plain-output-prefix value="C:\Users\fau_msenhoury\Documents\SUMO_Project\Week2-PR\Week2\network_info"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</netconvertConfiguration>
+-->
+
+<edges version="1.20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    <location netOffset="-588078.10,-2916021.56" convBoundary="23.62,474.32,628.42,1147.02" origBoundary="-80.117174,26.361494,-80.106211,26.371866" projParameter="+proj=utm +zone=17 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <edge id="1234122470#1" from="8224415980" to="12988833030" priority="1" type="highway.footway" numLanes="1" speed="2.78" spreadType="center" width="2.00" allow="pedestrian">
+        <lane index="0">
+            <param key="origId" value="1234122470"/>
+        </lane>
+    </edge>
+    <edge id="1234122472#0" from="12988833029" to="11453494983" priority="1" type="highway.footway" numLanes="1" speed="2.78" spreadType="center" width="2.00" allow="pedestrian">
+        <lane index="0">
+            <param key="origId" value="1234122472"/>
+        </lane>
+    </edge>
+    <edge id="1234122473#0" from="9691789919" to="11453494983" priority="7" type="highway.primary_link" numLanes="1" speed="22.22" shape="105.22,697.57 138.57,681.69 151.65,677.94 164.45,675.46 176.38,672.79 185.77,670.10 194.76,666.32 201.39,663.35 204.40,661.61 207.21,659.61 210.02,657.03 212.60,653.68" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="1234122473"/>
+        </lane>
+    </edge>
+    <edge id="1234122473#1" from="11453494983" to="11453495017" priority="7" type="highway.primary_link" numLanes="1" speed="22.22" shape="212.60,653.68 214.14,650.48 214.82,647.87 214.75,643.36 214.36,637.95 213.24,631.02 212.12,624.51 210.17,616.78 205.09,593.22" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="1234122473"/>
+        </lane>
+    </edge>
+    <edge id="1234122474#2" from="cluster_3851500483_3851500638_627965666_627965669_#5more" to="8224422753" priority="1" type="highway.footway" numLanes="1" speed="2.78" shape="238.65,647.54 246.18,644.94 247.57,644.20" spreadType="center" width="2.00" allow="pedestrian">
+        <lane index="0">
+            <param key="origId" value="1234122474 1413388661"/>
+        </lane>
+        <param key="origFrom" value="3851500483"/>
+    </edge>
+    <edge id="1234122476#0" from="12988833025" to="cluster_3851500483_3851500638_627965666_627965669_#5more" priority="1" type="highway.footway" numLanes="1" speed="2.78" shape="260.32,647.02 263.00,655.96" spreadType="center" width="2.00" allow="pedestrian">
+        <lane index="0">
+            <param key="origId" value="1234122476"/>
+        </lane>
+        <param key="origTo" value="8224415981"/>
+    </edge>
+    <edge id="1234122485#0" from="627980677" to="8224415980" name="Glades Road" priority="12" type="highway.primary" numLanes="5" speed="20.12" shape="357.88,641.52 313.85,661.24 275.34,678.10 271.83,679.64" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="1234122485"/>
+        </lane>
+        <lane index="1">
+            <param key="origId" value="1234122485"/>
+        </lane>
+        <lane index="2">
+            <param key="origId" value="1234122485"/>
+        </lane>
+        <lane index="3">
+            <param key="origId" value="1234122485"/>
+        </lane>
+        <lane index="4">
+            <param key="origId" value="1234122485"/>
+        </lane>
+        <param key="ref" value="SR 808"/>
+    </edge>
+    <edge id="1234122485#2" from="8224415980" to="cluster_3851500483_3851500638_627965666_627965669_#5more" name="Glades Road" priority="12" type="highway.primary" numLanes="5" speed="20.12" shape="271.83,679.64 249.97,689.18" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="1234122485"/>
+        </lane>
+        <lane index="1">
+            <param key="origId" value="1234122485"/>
+        </lane>
+        <lane index="2">
+            <param key="origId" value="1234122485"/>
+        </lane>
+        <lane index="3">
+            <param key="origId" value="1234122485"/>
+        </lane>
+        <lane index="4">
+            <param key="origId" value="1234122485"/>
+        </lane>
+        <param key="origTo" value="627965669"/>
+        <param key="ref" value="SR 808"/>
+    </edge>
+    <edge id="1234122494" from="627948366" to="10597096137" priority="9" type="highway.motorway_link" numLanes="1" speed="22.22" shape="173.08,726.49 106.54,742.73 102.37,744.19 96.33,746.62 90.66,749.63 87.12,751.89 82.42,754.85 78.24,758.25 74.35,762.19 70.43,766.46 66.63,771.48 63.18,776.74 60.11,782.65 57.68,788.22 55.58,794.74 39.81,845.76 30.89,872.05" spreadType="center" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2">
+        <lane index="0">
+            <param key="origId" value="1234122494"/>
+        </lane>
+    </edge>
+    <edge id="1234122498#1" from="cluster_3851500483_3851500638_627965666_627965669_#5more" to="11453495017" name="Northwest 15th Avenue" priority="10" type="highway.tertiary" numLanes="1" speed="13.41" shape="227.41,651.43 206.61,592.72" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="1234122498"/>
+        </lane>
+        <param key="origFrom" value="627983068"/>
+    </edge>
+    <edge id="1234122500#0" from="1106849789" to="cluster_3851500483_3851500638_627965666_627965669_#5more" name="Northwest 15th Avenue" priority="10" type="highway.tertiary" numLanes="4" speed="13.41" shape="213.31,574.68 236.02,639.97 238.65,647.54" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="1234122500"/>
+        </lane>
+        <lane index="1">
+            <param key="origId" value="1234122500"/>
+        </lane>
+        <lane index="2">
+            <param key="origId" value="1234122500"/>
+        </lane>
+        <lane index="3">
+            <param key="origId" value="1234122500"/>
+        </lane>
+        <param key="origTo" value="3851500483"/>
+    </edge>
+    <edge id="1413388660" from="12988833025" to="8224422751" priority="1" type="highway.footway" numLanes="1" speed="2.78" spreadType="center" width="2.00" allow="pedestrian">
+        <lane index="0">
+            <param key="origId" value="1413388660"/>
+        </lane>
+    </edge>
+    <edge id="1413388662" from="12988833029" to="8224415955" priority="1" type="highway.footway" numLanes="1" speed="2.78" spreadType="center" width="2.00" allow="pedestrian">
+        <lane index="0">
+            <param key="origId" value="1413388662"/>
+        </lane>
+    </edge>
+    <edge id="1413388663" from="8224415979" to="12988833030" priority="1" type="highway.footway" numLanes="1" speed="2.78" spreadType="center" width="2.00" allow="pedestrian">
+        <lane index="0">
+            <param key="origId" value="1413388663"/>
+        </lane>
+    </edge>
+    <edge id="1413388664" from="8224415995" to="cluster_3851500483_3851500638_627965666_627965669_#5more" priority="1" type="highway.footway" numLanes="1" speed="2.78" shape="259.27,704.48 257.74,704.93 252.43,707.18" spreadType="center" width="2.00" allow="pedestrian">
+        <lane index="0">
+            <param key="origId" value="1413388664 1234122480"/>
+        </lane>
+        <param key="origTo" value="627965666"/>
+    </edge>
+    <edge id="381947606#0" from="627963301" to="cluster_3851500658_627964278" priority="7" type="highway.primary_link" numLanes="2" speed="22.22" shape="206.59,793.09 221.14,759.75 223.69,753.60 225.47,748.19 226.23,744.41 226.44,740.78 226.25,737.84 225.41,734.18 224.55,731.37 223.11,728.89 221.22,726.60 218.32,723.75" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="381947606"/>
+        </lane>
+        <lane index="1">
+            <param key="origId" value="381947606"/>
+        </lane>
+        <param key="origTo" value="3851500658"/>
+    </edge>
+    <edge id="480427144#0" from="627963301" to="cluster_3851500483_3851500638_627965666_627965669_#5more" name="Airport Road" priority="10" type="highway.tertiary" numLanes="2" speed="13.41" shape="206.59,793.09 212.04,786.45 216.90,779.87 222.82,771.08 227.34,763.10 230.20,756.34 232.63,749.12 234.76,741.62 236.24,734.41 237.31,727.83 238.16,720.96 238.85,712.93" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="480427144"/>
+        </lane>
+        <lane index="1">
+            <param key="origId" value="480427144"/>
+        </lane>
+        <param key="origTo" value="3851500638"/>
+    </edge>
+    <edge id="49436625" from="11453495017" to="627972706" name="Northwest 15th Avenue" priority="10" type="highway.tertiary" numLanes="2" speed="13.41" shape="206.61,592.72 200.36,573.80 198.13,566.83 195.87,559.84 193.73,551.74 192.19,544.98 190.99,537.90 189.77,530.56 188.91,522.90 187.95,513.78 187.50,505.47 186.89,474.60" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0" acceleration="1">
+            <param key="origId" value="49436625"/>
+        </lane>
+        <lane index="1">
+            <param key="origId" value="49436625"/>
+        </lane>
+    </edge>
+    <edge id="49436629" from="627972706" to="1106849789" name="Northwest 15th Avenue" priority="10" type="highway.tertiary" numLanes="2" speed="13.41" shape="193.23,474.32 195.24,504.41 196.31,513.11 197.21,519.22 198.69,525.57 200.47,533.61 204.05,547.80 206.68,556.04 209.23,563.26 213.31,574.68" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="49436629"/>
+        </lane>
+        <lane index="1">
+            <param key="origId" value="49436629"/>
+        </lane>
+    </edge>
+    <edge id="534832359#1" from="cluster_3851500483_3851500638_627965666_627965669_#5more" to="1492076795" name="Airport Road" priority="10" type="highway.tertiary" numLanes="2" speed="13.41" shape="252.43,707.18 252.53,712.62 252.20,719.64 251.56,727.19 250.15,735.51 247.99,745.20 245.67,753.05 242.87,760.89 238.52,771.01 234.32,778.74 229.97,786.09 225.63,792.49 220.80,798.73 215.41,804.91 209.28,811.28 201.92,818.87 131.58,887.85 123.33,896.07 114.51,905.72 106.86,915.11 98.89,925.03 92.20,935.46 85.81,946.37 79.67,957.29 74.14,968.13 69.15,979.64 64.93,991.07 61.46,1001.77 57.81,1014.21 56.61,1019.40 55.19,1025.50 53.09,1037.86 51.49,1049.39 50.22,1061.97 49.65,1074.20 49.81,1086.54 50.62,1098.44 51.88,1109.78 53.77,1122.67 56.36,1134.79 59.52,1147.02" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="534832359"/>
+        </lane>
+        <lane index="1">
+            <param key="origId" value="534832359"/>
+        </lane>
+        <param key="origFrom" value="627965666"/>
+    </edge>
+    <edge id="534834577#1" from="cluster_3851500483_3851500638_627965666_627965669_#5more" to="9694656998" name="Glades Road" priority="12" type="highway.primary" numLanes="4" speed="20.12" shape="263.00,655.96 281.07,648.29 304.07,638.39 326.68,628.48 349.00,618.51 384.24,602.94 517.51,544.70 526.82,540.58 583.39,516.03 605.32,506.69 628.42,497.65" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="534834577"/>
+        </lane>
+        <lane index="1">
+            <param key="origId" value="534834577"/>
+        </lane>
+        <lane index="2">
+            <param key="origId" value="534834577"/>
+        </lane>
+        <lane index="3">
+            <param key="origId" value="534834577"/>
+        </lane>
+        <param key="origFrom" value="8224415981"/>
+        <param key="ref" value="SR 808"/>
+    </edge>
+    <edge id="534858136#0" from="627948366" to="627948357" name="Glades Road" priority="12" type="highway.primary" numLanes="4" speed="20.12" shape="171.14,720.39 158.39,723.53 148.36,725.73 137.82,727.90 124.83,729.82 111.19,731.44 97.82,732.54 85.16,733.12 74.01,733.30 62.21,733.13 49.30,732.32 35.85,730.92 23.62,729.43" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="534858136"/>
+        </lane>
+        <lane index="1">
+            <param key="origId" value="534858136"/>
+        </lane>
+        <lane index="2">
+            <param key="origId" value="534858136"/>
+        </lane>
+        <lane index="3">
+            <param key="origId" value="534858136"/>
+        </lane>
+        <param key="ref" value="SR 808"/>
+    </edge>
+    <edge id="543692100#0" from="9691789919" to="cluster_3851500483_3851500638_627965666_627965669_#5more" name="Glades Road" priority="12" type="highway.primary" numLanes="6" speed="20.12" shape="105.22,697.57 114.51,695.35 125.66,693.14 151.10,688.64 164.11,685.98 175.81,683.55 187.67,680.63 200.45,677.01 212.77,673.33 215.21,672.56 232.14,667.25" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="543692100"/>
+        </lane>
+        <lane index="1">
+            <param key="origId" value="543692100"/>
+        </lane>
+        <lane index="2">
+            <param key="origId" value="543692100"/>
+        </lane>
+        <lane index="3">
+            <param key="origId" value="543692100"/>
+        </lane>
+        <lane index="4">
+            <param key="origId" value="543692100"/>
+        </lane>
+        <lane index="5">
+            <param key="origId" value="543692100"/>
+        </lane>
+        <param key="origTo" value="627966389"/>
+        <param key="ref" value="SR 808"/>
+    </edge>
+    <edge id="741687503#0" from="cluster_3851500483_3851500638_627965666_627965669_#5more" to="cluster_3851500658_627964278" name="Glades Road" priority="12" type="highway.primary" numLanes="5" speed="20.12" shape="237.64,694.33 210.25,706.07 200.48,710.21 189.04,714.55" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="741687503"/>
+        </lane>
+        <lane index="1">
+            <param key="origId" value="741687503"/>
+        </lane>
+        <lane index="2">
+            <param key="origId" value="741687503"/>
+        </lane>
+        <lane index="3">
+            <param key="origId" value="741687503"/>
+        </lane>
+        <lane index="4">
+            <param key="origId" value="741687503"/>
+        </lane>
+        <param key="origFrom" value="975520100"/>
+        <param key="origTo" value="627964278"/>
+        <param key="ref" value="SR 808"/>
+    </edge>
+    <edge id="741687503#1" from="cluster_3851500658_627964278" to="627948366" name="Glades Road" priority="12" type="highway.primary" numLanes="5" speed="20.12" shape="189.04,714.55 180.30,717.48 171.14,720.39" spreadType="center" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone">
+        <lane index="0">
+            <param key="origId" value="741687503"/>
+        </lane>
+        <lane index="1">
+            <param key="origId" value="741687503"/>
+        </lane>
+        <lane index="2">
+            <param key="origId" value="741687503"/>
+        </lane>
+        <lane index="3">
+            <param key="origId" value="741687503"/>
+        </lane>
+        <lane index="4">
+            <param key="origId" value="741687503"/>
+        </lane>
+        <param key="origFrom" value="627964278"/>
+        <param key="ref" value="SR 808"/>
+    </edge>
+</edges>

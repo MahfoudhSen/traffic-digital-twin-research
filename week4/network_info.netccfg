@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-06-18T14:19:47.503962-05:00 by Eclipse SUMO netconvert 1.27.0
+-->
+
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="C:\Users\fau_msenhoury\Documents\SUMO_Project\Week2-PR\Week2\network_info.nod.xml"/>
+        <edge-files value="C:\Users\fau_msenhoury\Documents\SUMO_Project\Week2-PR\Week2\network_info.edg.xml"/>
+        <connection-files value="C:\Users\fau_msenhoury\Documents\SUMO_Project\Week2-PR\Week2\network_info.con.xml"/>
+        <tllogic-files value="C:\Users\fau_msenhoury\Documents\SUMO_Project\Week2-PR\Week2\network_info.tll.xml"/>
+        <type-files value="C:\Users\fau_msenhoury\Documents\SUMO_Project\Week2-PR\Week2\network_info.typ.xml"/>
+    </input>
+
+    <output>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</netconvertConfiguration>

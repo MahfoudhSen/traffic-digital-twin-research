@@ -1,0 +1,5 @@
+<configuration>
+    <input>
+        <net-file value="Prj2netwo.net.xml"/>
+    </input>
+</configuration>

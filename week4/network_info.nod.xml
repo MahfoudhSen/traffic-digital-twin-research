@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-06-18T14:19:47.499032-05:00 by Eclipse SUMO netconvert 1.27.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\fau_msenhoury\Documents\SUMO_Project\Week2-PR\Week2\Prj2netwo.net.xml"/>
+    </input>
+
+    <output>
+        <plain-output-prefix value="C:\Users\fau_msenhoury\Documents\SUMO_Project\Week2-PR\Week2\network_info"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</netconvertConfiguration>
+-->
+
+<nodes version="1.20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    <location netOffset="-588078.10,-2916021.56" convBoundary="23.62,474.32,628.42,1147.02" origBoundary="-80.117174,26.361494,-80.106211,26.371866" projParameter="+proj=utm +zone=17 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <node id="10597096137" x="30.89" y="872.05" type="dead_end"/>
+    <node id="1106849789" x="213.31" y="574.68" type="priority"/>
+    <node id="11453494983" x="212.60" y="653.68" type="priority"/>
+    <node id="11453495017" x="206.61" y="592.72" type="priority"/>
+    <node id="12988833025" x="260.32" y="647.02" type="dead_end"/>
+    <node id="12988833029" x="210.65" y="652.55" type="dead_end"/>
+    <node id="12988833030" x="276.76" y="690.69" type="dead_end"/>
+    <node id="1492076795" x="59.52" y="1147.02" type="dead_end"/>
+    <node id="627948357" x="23.62" y="729.43" type="dead_end"/>
+    <node id="627948366" x="171.14" y="720.39" type="priority"/>
+    <node id="627963301" x="206.59" y="793.09" type="dead_end"/>
+    <node id="627972706" x="190.08" y="474.87" type="dead_end"/>
+    <node id="627980677" x="357.88" y="641.52" type="dead_end"/>
+    <node id="8224415955" x="209.67" y="652.00" type="dead_end"/>
+    <node id="8224415979" x="277.29" y="691.93" type="dead_end"/>
+    <node id="8224415980" x="271.83" y="679.64" type="traffic_light" tl="joinedS_8224415980_cluster_3851500483_3851500638_627965666_627965669_#5more" tlType="actuated" controlledInner="1234122485#2"/>
+    <node id="8224415995" x="259.27" y="704.48" type="dead_end"/>
+    <node id="8224422751" x="259.61" y="644.54" type="dead_end"/>
+    <node id="8224422753" x="247.57" y="644.20" type="dead_end"/>
+    <node id="9691789919" x="105.22" y="697.57" type="dead_end"/>
+    <node id="9694656998" x="628.42" y="497.65" type="dead_end"/>
+    <node id="cluster_3851500483_3851500638_627965666_627965669_#5more" x="242.63" y="676.58" type="traffic_light" tl="joinedS_8224415980_cluster_3851500483_3851500638_627965666_627965669_#5more" tlType="actuated" controlledInner="1234122485#2">
+        <param key="origEdgeIds" value="1234122474#1 1234122480#1 1234122498#0 1234122500#2 159607636 480427144#2 49436375 534832355 534832357 534832359#0 534834577#0"/>
+        <param key="origId" value="3851500483 3851500638 627965666 627965669 627966015 627966389 627983068 8224415981 975520100"/>
+    </node>
+    <node id="cluster_3851500658_627964278" x="203.68" y="719.15" type="traffic_light" tl="cluster_3851500658_627964278" tlType="actuated">
+        <param key="origEdgeIds" value="381947606#2"/>
+        <param key="origId" value="3851500658 627964278"/>
+    </node>
+</nodes>

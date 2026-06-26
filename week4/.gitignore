@@ -1,0 +1,23 @@
+# SUMO generated / regenerable outputs — keep the repo to core logic only.
+# Everything below is reproducible from the scripts + network + demand files.
+
+# Demand generation (randomTrips.py / duarouter)
+trips.trips.xml
+routes.rou.xml
+routes.rou.alt.xml
+base_routes.rou.xml
+
+# Simulation outputs
+base_summary.xml
+base_edgedata.xml
+calib_east_log.xml
+calib_west_log.xml
+*_summary.xml
+*_edgedata.xml
+
+# Output figures
+outputdataedges.png
+
+# Backups & scratch artifacts
+*.bak
+python
