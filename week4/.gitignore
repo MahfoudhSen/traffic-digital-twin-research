@@ -21,3 +21,4 @@ outputdataedges.png
 # Backups & scratch artifacts
 *.bak
 python
+__pycache__/

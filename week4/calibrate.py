@@ -28,7 +28,7 @@ first_interval = intervals[0]
 # Filter out everything except your Glades Road IDs (first hour only)
 for edge in first_interval.findall('edge'):
     edge_id = edge.get('id')
-    vehicles = int(float(edge.get('entered', 0)))
+    vehicles = int(float(edge.get('departed', 0)))
 
     # Westbound Glades Road
     if edge_id == "1234122485#0":

@@ -1,22 +1,36 @@
-<routes>
-    <vType id="car" vClass="passenger" length="5.0" minGap="2.5" maxSpeed="15.65" accel="2.6" decel="4.5" speedDev="0.1" sigma="0.5"/>
-    <vType id="truck" vClass="truck" length="12.0" minGap="3.0" maxSpeed="13.41" accel="1.2" decel="3.5" speedDev="0.1" sigma="0.5"/>
-    <vType id="car_var" vClass="passenger" length="5.0" minGap="2.5" maxSpeed="15.65" accel="2.6" decel="4.5" speedDev="0.1" sigma="0.5"/>
-    <vType id="truck_var" vClass="truck" length="12.0" minGap="3.0" maxSpeed="13.41" accel="1.2" decel="3.5" speedDev="0.1" sigma="0.5"/>
-
-    <flow id="flow_west_cars" type="car" begin="0" end="3600" number="2590" from="778959632" to="1234202803" departLane="random" departPos="last" departSpeed="max" maxDepartDelay="3600"/>
-    <flow id="flow_west_trucks" type="truck" begin="0" end="3600" number="110" from="778959632" to="1234202803" departLane="random" departPos="last" departSpeed="max" maxDepartDelay="3600"/>
-
-    <flow id="flow_east_cars" type="car" begin="0" end="3600" number="2396" from="464986841#0" to="534834577#0" departLane="random" departPos="last" departSpeed="max" maxDepartDelay="3600"/>
-    <flow id="flow_east_trucks" type="truck" begin="0" end="3600" number="104" from="464986841#0" to="534834577#0" departLane="random" departPos="last" departSpeed="max" maxDepartDelay="3600"/>
-
-    <flow id="flow_north_straight_cars" type="car_var" begin="0" end="3600" number="200" from="480427144#0" to="49436625" departLane="best" departPos="last" departSpeed="max" maxDepartDelay="3600"/>
-    <flow id="flow_north_straight_trucks" type="truck_var" begin="0" end="3600" number="11" from="480427144#0" to="49436625" departLane="best" departPos="last" departSpeed="max" maxDepartDelay="3600"/>
-
-    <flow id="flow_airport_right_cars" type="car" begin="0" end="3600" number="182" from="135935535#0" to="381947606#0" departLane="best" departPos="last" departSpeed="max" maxDepartDelay="3600"/>
-    <flow id="flow_airport_right_trucks" type="truck" begin="0" end="3600" number="10" from="135935535#0" to="381947606#0" departLane="best" departPos="last" departSpeed="max" maxDepartDelay="3600"/>
-
-    <flow id="flow_se_cars" type="car" begin="0" end="3600" number="275" from="49436629" to="534832359#0" departLane="best" departPos="last" departSpeed="max" maxDepartDelay="3600"/>
-    <flow id="flow_se_trucks" type="truck" begin="0" end="3600" number="15" from="49436629" to="534832359#0" departLane="best" departPos="last" departSpeed="max" maxDepartDelay="3600"/>
-    <flow id="flow_sw_cars" type="car" begin="0" end="3600" number="275" from="1234122473#0" to="49436625" departLane="best" departPos="free" departSpeed="max" maxDepartDelay="3600"/>
+<?xml version='1.0' encoding='utf-8'?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Scenario: baseline -->
+    <!-- FDOT 2025 | Site 930041 (Glades Rd) | Site 937414 (Airport Rd) -->
+    <vType id="car" vClass="passenger" length="4.8" minGap="2.5" maxSpeed="16.67" accel="2.6" decel="4.5" emergencyDecel="9.0" speedDev="0.1" sigma="0.5" laneChangeModel="LC2013" lcStrategic="10.0" lcCooperative="1.0" lcSpeedGain="0.3" lcAssertive="2.0" lcImpatience="0.5" />
+    <vType id="truck" vClass="truck" length="12.5" minGap="3.5" maxSpeed="13.89" accel="1.0" decel="3.5" emergencyDecel="7.0" speedDev="0.05" sigma="0.3" laneChangeModel="LC2013" lcStrategic="10.0" lcCooperative="1.0" lcSpeedGain="0.1" lcAssertive="1.5" lcImpatience="0.3" />
+    <vType id="car_var" vClass="passenger" length="4.8" minGap="2.5" maxSpeed="16.67" accel="2.6" decel="4.5" emergencyDecel="9.0" speedDev="0.1" sigma="0.5" laneChangeModel="LC2013" lcStrategic="10.0" lcCooperative="1.0" lcSpeedGain="0.0" lcAssertive="1.5" lcImpatience="0.2" />
+    <vType id="truck_var" vClass="truck" length="12.5" minGap="3.5" maxSpeed="13.89" accel="1.0" decel="3.5" emergencyDecel="7.0" speedDev="0.05" sigma="0.3" laneChangeModel="LC2013" lcStrategic="10.0" lcCooperative="1.0" lcSpeedGain="0.0" lcAssertive="1.5" lcImpatience="0.2" />
+    <flow id="flow_wb_glades_str_cars" type="car" begin="0" end="3600" vehsPerHour="1883" from="1234122485#0" to="741687503#1" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_wb_glades_str_trucks" type="truck" begin="0" end="3600" vehsPerHour="81" from="1234122485#0" to="741687503#1" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_wb_glades_rt_cars" type="car" begin="0" end="3600" vehsPerHour="377" from="1234122485#0" to="534832359#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_wb_glades_rt_trucks" type="truck" begin="0" end="3600" vehsPerHour="16" from="1234122485#0" to="534832359#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_wb_glades_lt_cars" type="car" begin="0" end="3600" vehsPerHour="251" from="1234122485#0" to="1234122498#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_wb_glades_lt_trucks" type="truck" begin="0" end="3600" vehsPerHour="11" from="1234122485#0" to="1234122498#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_eb_glades_str_cars" type="car" begin="0" end="3600" vehsPerHour="1353" from="543692100#0" to="534834577#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_eb_glades_str_trucks" type="truck" begin="0" end="3600" vehsPerHour="58" from="543692100#0" to="534834577#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_eb_glades_rt_cars" type="car" begin="0" end="3600" vehsPerHour="270" from="543692100#0" to="1234122498#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_eb_glades_rt_trucks" type="truck" begin="0" end="3600" vehsPerHour="12" from="543692100#0" to="1234122498#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_eb_glades_lt_cars" type="car" begin="0" end="3600" vehsPerHour="180" from="543692100#0" to="534832359#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_eb_glades_lt_trucks" type="truck" begin="0" end="3600" vehsPerHour="8" from="543692100#0" to="534832359#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_arpt_south_str_cars" type="car" begin="0" end="3600" vehsPerHour="287" from="1234122500#0" to="534832359#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_arpt_south_str_trucks" type="truck" begin="0" end="3600" vehsPerHour="15" from="1234122500#0" to="534832359#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_arpt_south_rt_cars" type="car" begin="0" end="3600" vehsPerHour="58" from="1234122500#0" to="534834577#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_arpt_south_rt_trucks" type="truck" begin="0" end="3600" vehsPerHour="3" from="1234122500#0" to="534834577#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_arpt_south_lt_cars" type="car" begin="0" end="3600" vehsPerHour="38" from="1234122500#0" to="741687503#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_arpt_south_lt_trucks" type="truck" begin="0" end="3600" vehsPerHour="2" from="1234122500#0" to="741687503#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_arpt_west_str_cars" type="car" begin="0" end="3600" vehsPerHour="207" from="480427144#0" to="1234122498#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_arpt_west_str_trucks" type="truck" begin="0" end="3600" vehsPerHour="11" from="480427144#0" to="1234122498#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_arpt_west_rt_cars" type="car" begin="0" end="3600" vehsPerHour="41" from="480427144#0" to="741687503#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_arpt_west_rt_trucks" type="truck" begin="0" end="3600" vehsPerHour="2" from="480427144#0" to="741687503#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_arpt_west_lt_cars" type="car" begin="0" end="3600" vehsPerHour="28" from="480427144#0" to="534834577#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_arpt_west_lt_trucks" type="truck" begin="0" end="3600" vehsPerHour="1" from="480427144#0" to="534834577#0" departLane="best" departPos="base" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_se_cars" type="car" begin="0" end="3600" vehsPerHour="275" from="49436629" to="534832359#0" departLane="best" departPos="last" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_se_trucks" type="truck" begin="0" end="3600" vehsPerHour="15" from="49436629" to="534832359#0" departLane="best" departPos="last" departSpeed="max" maxDepartDelay="3600" />
+    <flow id="flow_sw_cars" type="car" begin="0" end="3600" vehsPerHour="275" from="1234122473#0" to="49436625" departLane="best" departPos="last" departSpeed="max" maxDepartDelay="3600" />
 </routes>

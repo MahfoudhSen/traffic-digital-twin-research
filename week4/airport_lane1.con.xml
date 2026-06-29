@@ -1,8 +1,0 @@
-<connections>
-    <!-- Real-world channelization of Airport Rd SB approach 480427144#0 (2 lanes) -->
-    <!-- LEFT lane (index 1): through/front + left turn -->
-    <connection from="480427144#0" fromLane="1" to="1234122498#0" toLane="0"/>
-    <delete from="480427144#0" fromLane="1" to="534832359#0" toLane="1"/>
-    <!-- RIGHT lane (index 0): right turn ONLY (must NOT go front) -->
-    <delete from="480427144#0" fromLane="0" to="1234122498#0" toLane="0"/>
-</connections>
